@@ -1,0 +1,58 @@
+:root {
+    --mainbg: rgb(59, 27, 80);
+    --mainborder: #c31e3b;
+}
+
+
+body {
+    height: 100vh;
+}
+p{
+    display: inline;
+}
+hr {
+    border-color: var(--mainborder);
+}
+
+
+main div input ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.1;
+}
+
+a:hover {
+    font-weight: bolder;
+    transform: scale(1.18);
+    background-color: rgb(75, 68, 68);
+}
+
+/* animation for progress bar */
+@keyframes progressbar{
+    0% { 
+        width: 0vh;
+        background-color: rgb(117, 88, 88);
+    }
+    30%{
+        width: 50vh;
+        background-color: rgb(228, 214, 214);
+    }
+    60%{
+        width: 70vh; background-color: rgb(177, 37, 72);
+    }
+    80%{
+        width: 100vh; background-color: rgb(47, 179, 47);
+    }
+    /* automatically gets set to var(--main-bg) at 100% */
+}
+
+h3:hover{
+    color: var(--mainborder);
+    transform: scaleY(1.3);
+    transition: transform 1s ease-in;
+}
+
+iframe:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s ease-in;
+}
